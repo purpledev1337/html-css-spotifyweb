@@ -9,18 +9,28 @@
 .wrapper {
     height: calc(100vh - 100px);
     display: flex;
-    background-color: black;
+    background-color: darkslategray;
 }
 
 /* HEADER rules */
 #upgrade {
     height: 80px;
     width: calc(100% - 250px);
-    background-color: black;
-    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#upgrade-btn {
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin-right: 15px;
 }
 
 /* NAV rules */
@@ -28,6 +38,7 @@
     width: 250px;
     background-color: brown;
     height: calc(100vh - 180px);
+    min-height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -38,6 +49,7 @@
     height: 80px;
     padding: 15px 100px 15px 10px;
     line-height: 80px;
+    background-color: black;
 }
 
 #mid-main-menu-left {
@@ -56,7 +68,6 @@
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
-    background-color: lightskyblue;
     margin-top: 80px;
 }
 
