@@ -1,6 +1,41 @@
+/* COMMON rules */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: ‘Montserrat’, sans-serif;
+}
+
+.wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+    background-color: burlywood;
+}
+
+/* HEADER rules */
+#upgrade {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    opacity: 70%;
+}
+
+/* NAV rules */
+#menu {
+    width: 250px;
+    background-color: brown;
+}
+
+/* MAIN rules */
+#content {
+    width: calc(100% - 250px);
+    background-color: darkblue;
+}
+
+/* PLAYER rules */
+#player {
+    height: 100px;
+    background-color: green;
 }
