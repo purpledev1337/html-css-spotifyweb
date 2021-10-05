@@ -23,7 +23,7 @@
 }
 
 /* NAV rules */
-#menu {
+#menu-left {
     width: 250px;
     background-color: brown;
 }
@@ -36,6 +36,12 @@
     overflow: auto;
     background-color: darkblue;
     margin-top: 80px;
+}
+
+#content .playlist {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .square {
