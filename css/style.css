@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 100px);
     display: flex;
     background-color: black;
 }
@@ -15,17 +15,39 @@
 /* HEADER rules */
 #upgrade {
     height: 80px;
-    width: 100%;
+    width: calc(100% - 250px);
     background-color: black;
     opacity: 50%;
     position: absolute;
     top: 0;
+    right: 0;
 }
 
 /* NAV rules */
-#menu-left {
+#main-menu-left {
     width: 250px;
     background-color: brown;
+    height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#logo {
+    width: 250px;
+    height: 80px;
+    padding: 15px 100px 15px 10px;
+    line-height: 80px;
+}
+
+#mid-main-menu-left {
+    overflow: auto;
+}
+
+#bottom-menu-left {
+    width: 250px;
+    height: 80px;
+    background-color: orange;
 }
 
 /* MAIN rules */
@@ -34,7 +56,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
-    background-color: darkblue;
+    background-color: lightskyblue;
     margin-top: 80px;
 }
 
@@ -54,6 +76,10 @@
 
 /* PLAYER rules */
 #player {
+    width: 100%;
     height: 100px;
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
     background-color: green;
 }
