@@ -7,9 +7,9 @@
 }
 
 .wrapper {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 180px);
     display: flex;
-    background-color: burlywood;
+    background-color: black;
 }
 
 /* HEADER rules */
@@ -17,9 +17,9 @@
     height: 80px;
     width: 100%;
     background-color: black;
-    position: fixed;
+    opacity: 50%;
+    position: absolute;
     top: 0;
-    opacity: 70%;
 }
 
 /* NAV rules */
@@ -31,7 +31,19 @@
 /* MAIN rules */
 #content {
     width: calc(100% - 250px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
     background-color: darkblue;
+    margin-top: 80px;
+}
+
+.square {
+    width: calc(100% / 6 - 4px);
+    height: 200px;
+    margin: 4px 2px;
+    min-width: 200px;
+    background-color: yellow;
 }
 
 /* PLAYER rules */
