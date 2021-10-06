@@ -96,7 +96,7 @@
 /* MAIN rules */
 
 #content {
-    width: calc(100% - 250px);
+    width: calc(100vw - 250px);
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
@@ -107,6 +107,35 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+#content .playlist .playlist-title {
+    width: 100%;
+    color: white;
+}
+
+#content .playlist .playlist-item {
+    width: calc(100% / 6 - 2%);
+    min-width: 100px;
+    margin: 5px 1%;
+    text-align: center;
+}
+
+#content .playlist .playlist-item img {
+    width: 100%;
+}
+
+#content .playlist .playlist-item h5 {
+    color: white;
+    margin: 5px 0;
+}
+
+#content .playlist .playlist-item h6 {
+    color: gray;
+}
+
+#popular-artists img {
+    border-radius: 50%;
 }
 
 #menu-top {
@@ -122,13 +151,6 @@
 
 #menu-top ul a {
     color: grey;
-}
-.square {
-    width: calc(100% / 6 - 4px);
-    height: 200px;
-    margin: 4px 2px;
-    min-width: 200px;
-    background-color: yellow;
 }
 
 /* PLAYER rules */
