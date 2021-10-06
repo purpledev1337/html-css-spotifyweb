@@ -4,6 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: ‘Montserrat’, sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 .wrapper {
@@ -62,7 +64,16 @@
     background-color: black;
 }
 
+#top-main-menu-left {
+    min-height: 120px;
+}
+
+#top-main-menu-left img {
+    height: 1.5em;
+}
+
 #mid-main-menu-left {
+    min-height: 40px;
     overflow: auto;
 }
 
@@ -72,7 +83,11 @@
     background-color: orange;
 }
 
-#bottom-menu-left img {
+#bottom-menu-left a:first-of-type img {
+    height: 1em;
+}
+
+#bottom-menu-left a:last-of-type img {
     height: 50%;
     background-color: grey;
     border-radius: 50%;
@@ -103,7 +118,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    list-style: none;
 }
 
 #menu-top ul a {
@@ -130,7 +144,10 @@
 }
 
 #player-left {
+    min-width: 200px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #player-left i {
@@ -181,7 +198,10 @@
 }
 
 #player-right {
+    min-width: 200px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #player-right i {
@@ -189,7 +209,7 @@
 }
 
 #player-right .progress-outline {
-    width: 150px;
+    width: 120px;
     height: 5px;
     background-color: grey;
 }
