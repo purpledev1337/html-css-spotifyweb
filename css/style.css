@@ -48,7 +48,7 @@
 /* NAV rules */
 #main-menu-left {
     width: 250px;
-    background-color: brown;
+    background-color: black;
     height: calc(100vh - 180px);
     min-height: 180px;
     display: flex;
@@ -61,11 +61,23 @@
     height: 80px;
     padding: 15px 100px 15px 10px;
     line-height: 80px;
-    background-color: black;
+}
+
+#logo-mini {
+    width: 50px;
+    display: none;
 }
 
 #top-main-menu-left {
     min-height: 120px;
+}
+
+#top-main-menu-left h4 {
+    display: inline-block;
+}
+
+#top-main-menu-left h3 {
+    color: white;
 }
 
 #top-main-menu-left img {
@@ -81,6 +93,10 @@
     width: 250px;
     height: 80px;
     background-color: orange;
+}
+
+#bottom-menu-left h4, #bottom-menu-left h3 {
+    display: inline-block;
 }
 
 #bottom-menu-left a:first-of-type img {
@@ -116,7 +132,7 @@
 
 #content .playlist .playlist-item {
     width: calc(100% / 6 - 2%);
-    min-width: 100px;
+    min-width: 80px;
     margin: 5px 1%;
     text-align: center;
 }
@@ -140,10 +156,10 @@
 
 #menu-top {
     width: 100%;
+    height: 50px;
 }
 
 #menu-top ul {
-    height: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -166,7 +182,7 @@
 }
 
 #player-left {
-    min-width: 200px;
+    min-width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,6 +204,7 @@
 
 #player-cmd {
     width: 100%;
+    min-width: 200px;
     display: flex;
     justify-content: center;
 }
@@ -198,8 +215,9 @@
 
 #player-time {
     width: 100%;
+    min-width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #player-time span {
@@ -208,7 +226,7 @@
 
 #player-mid .progress-outline {
     width: calc(40vw - 100px);
-    min-width: 150px;
+    min-width: 100px;
     height: 5px;
     background-color: grey;
 }
@@ -220,7 +238,7 @@
 }
 
 #player-right {
-    min-width: 200px;
+    min-width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,13 +249,71 @@
 }
 
 #player-right .progress-outline {
-    width: 120px;
+    width: 80px;
     height: 5px;
     background-color: grey;
 }
 
 #player-right .progress-bar {
-    width: 30px;
+    width: 15px;
     height: 5px;
     background-color: white;
+}
+
+@media all and (max-width: 878px) {
+    #content .playlist .playlist-item {
+        width: calc(100% / 4 - 2%);
+    }
+}
+
+@media all and (max-width: 639px) {
+    #content .playlist .playlist-item {
+        width: calc(100% / 2 - 2%);
+    }
+    #player-left-icons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 552px) {
+    #upgrade {
+        width: 100%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-mini {
+        display: block;
+    }
+    
+    #main-menu-left {
+        width: 50px;
+    }
+
+    #top-main-menu-left h4, #top-main-menu-left h3 {
+        display: none;
+    }
+
+    #top-main-menu-left li:last-child {
+        display: none;
+    }
+
+    #mid-main-menu-left {
+        display: none;
+    }
+
+    #bottom-menu-left {
+        width: 50px;
+    }
+
+    #bottom-menu-left h4, #bottom-menu-left h3 {
+        display: none;
+    }
+
+    #content {
+        width: 100%;
+    }
 }
