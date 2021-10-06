@@ -11,14 +11,18 @@
 .wrapper {
     height: calc(100vh - 100px);
     display: flex;
-    background-color: rgb(54, 54, 54);
+    background-color: #141922;
 }
 
 .progress-outline {
+    background-color: #5a5a5a;
+    border-radius: 10px;
     position: relative;
 }
 
 .progress-bar {
+    background-color: #c1c1c1;
+    border-radius: 10px;
     position: absolute;
     left: 0;
 }
@@ -54,6 +58,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0 20px;
 }
 
 #logo {
@@ -72,16 +77,30 @@
     min-height: 120px;
 }
 
+#top-main-menu-left li a {
+    line-height: 40px;
+    color: #6f6f6f;
+}
+
 #top-main-menu-left h4 {
     display: inline-block;
 }
 
 #top-main-menu-left h3 {
     color: white;
+    margin-top: 20px;
 }
 
 #top-main-menu-left img {
-    height: 1.5em;
+    vertical-align: middle;
+    height: 30px;
+}
+
+#top-main-menu-left li:last-child i {
+    display: inline-block;
+    font-size: 40px;
+    margin: 10px 12px 10px 0;
+    vertical-align: middle;
 }
 
 #mid-main-menu-left {
@@ -89,14 +108,31 @@
     overflow: auto;
 }
 
+#mid-main-menu-left a {
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6f6f6f;
+}
+
 #bottom-menu-left {
     width: 250px;
     height: 80px;
-    background-color: orange;
+    background-color: black;
+    padding: 0 20px;
+
 }
 
 #bottom-menu-left h4, #bottom-menu-left h3 {
     display: inline-block;
+}
+
+#bottom-menu-left h4 {
+    color: #6f6f6f;
+}
+
+#bottom-menu-left h3 {
+    color: white;
 }
 
 #bottom-menu-left a:first-of-type img {
@@ -157,6 +193,7 @@
 #menu-top {
     width: 100%;
     height: 50px;
+    margin: 15px 0;
 }
 
 #menu-top ul {
@@ -166,7 +203,11 @@
 }
 
 #menu-top ul a {
-    color: grey;
+    font-size: 16px;
+    margin: 0 10px;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: #7d7f84;
 }
 
 /* PLAYER rules */
@@ -176,16 +217,19 @@
     position: fixed;
     bottom: 0;
     z-index: 200;
-    background-color: green;
+    background-color: #282828;
     display: flex;
     justify-content: space-between;
 }
 
 #player-left {
-    min-width: 150px;
+    min-width: 120px;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+#player-left img, #player-left div {
+    margin: 0 5px;
 }
 
 #player-left-song {
@@ -209,41 +253,47 @@
 }
 
 #player-cmd {
-    min-width: 200px;
+    min-width: 180px;
     align-self: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #player-cmd i {
-    margin: 0 2%;
+    font-size: 30px;
+    color: white;
+    margin: 0 15px;
 }
 
 #player-time {
-    min-width: 200px;
+    min-width: 180px;
     display: flex;
-    justify-content: center;
+    height: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #player-time span {
-    min-width: 50px;
+    color: white;
+    font-size: 12px;
+    width: 30px;
+    margin: 0 15px;
 }
 
 #player-mid .progress-outline {
-    width: calc(40vw - 100px);
+    width: calc(40vw - 120px);
     min-width: 100px;
     height: 5px;
-    background-color: grey;
 }
 
 #player-mid .progress-bar {
     width: 20%;
     height: 5px;
-    background-color: white;
 }
 
 #player-right {
-    min-width: 150px;
+    min-width: 140px;
+    margin-right: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -251,18 +301,17 @@
 
 #player-right i {
     color: white;
+    margin: 0 15px;
 }
 
 #player-right .progress-outline {
     width: 80px;
     height: 5px;
-    background-color: grey;
 }
 
 #player-right .progress-bar {
     width: 15px;
     height: 5px;
-    background-color: white;
 }
 
 @media all and (max-width: 878px) {
@@ -322,7 +371,15 @@
         width: 100%;
     }
 
+    #player-left img {
+        height: 6vw;
+    }
+
     #player-left-song {
-        width: 40%;
+        width: 30%;
+    }
+
+    #player-right i {
+        margin: 0 5px;
     }
 }
