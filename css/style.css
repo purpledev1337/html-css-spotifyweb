@@ -184,8 +184,14 @@
 #player-left {
     min-width: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+#player-left-song {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 #player-left i {
@@ -198,15 +204,15 @@
 
 #player-mid {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #player-cmd {
-    width: 100%;
     min-width: 200px;
+    align-self: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #player-cmd i {
@@ -214,7 +220,6 @@
 }
 
 #player-time {
-    width: 100%;
     min-width: 200px;
     display: flex;
     justify-content: center;
@@ -315,5 +320,9 @@
 
     #content {
         width: 100%;
+    }
+
+    #player-left-song {
+        width: 40%;
     }
 }
