@@ -239,6 +239,28 @@
     font-size: 20px;
 }
 
+#content .playlist .playlist-item .img-overlay {
+    position: relative;
+}
+
+#content .playlist .playlist-item .img-overlay i {
+    opacity: 0;
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content .playlist .playlist-item a:hover i {
+    opacity: 1;
+}
+
+#content .playlist .playlist-item a:hover img {
+    opacity: 0.6;
+}
+
 #content .playlist .playlist-item img {
     width: 100%;
 }
@@ -251,10 +273,6 @@
 #content .playlist .playlist-item h6 {
     color: #6f6f6f;
     display: inline-block;
-}
-
-#content .playlist .playlist-item a:hover img {
-    opacity: 50%;
 }
 
 #popular-artists img {
