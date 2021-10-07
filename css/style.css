@@ -395,7 +395,12 @@
 #player-cmd i {
     font-size: 25px;
     color: white;
-    margin: 0 15px;
+    /* margin: 0 15px; */
+}
+
+#player-cmd i:nth-child(3) {
+    width: 35px;
+    text-align: center;
 }
 
 #player-cmd:hover i:nth-child(3) {
