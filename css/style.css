@@ -84,7 +84,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* padding: 0 25px; */
     font-size: 16px;
     font-weight: bold;
 }
@@ -122,8 +121,13 @@
     color: #6f6f6f;
 }
 
-#top-main-menu-left li:first-child {
+/* #top-main-menu-left li:first-child {
     border-left: 2px solid #adff2f;
+} */
+
+#top-main-menu-left li:hover::before {
+    content: "";
+    border-left: 3px solid #adff2f;
 }
 
 #top-main-menu-left h4 {
@@ -245,7 +249,7 @@
 
 #content .playlist .playlist-item .img-overlay i {
     opacity: 0;
-    font-size: 45px;
+    font-size: 50px;
     color: white;
     position: absolute;
     top: 50%;
@@ -258,7 +262,7 @@
 }
 
 #content .playlist .playlist-item a:hover img {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 #content .playlist .playlist-item img {
@@ -290,14 +294,11 @@
 }
 
 #menu-top ul li {
+    position: relative;
     margin: 15px 10px;
 }
 
-#menu-top ul li:first-child {
-    position: relative;
-}
-
-#menu-top ul li:first-child::after {
+#menu-top ul li:hover::after {
     content: "";
     width: 30px;
     height: 3px;
@@ -395,7 +396,6 @@
 #player-cmd i {
     font-size: 25px;
     color: white;
-    /* margin: 0 15px; */
 }
 
 #player-cmd i:nth-child(3) {
@@ -409,6 +409,10 @@
 
 #player-cmd i:nth-child(3):hover {
     cursor: pointer;
+}
+
+#player-cmd i:hover {
+    opacity: 0.5;
 }
 
 #player-time {
@@ -449,6 +453,10 @@
 #player-right i {
     color: white;
     margin: 0 10px;
+}
+
+#player-right i:hover {
+    opacity: 0.5;
 }
 
 #player-right .progress-outline {
