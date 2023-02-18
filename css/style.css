@@ -540,6 +540,10 @@
         border-left: none;
     }
 
+    #top-main-menu-left li:hover a {
+        padding: 0;
+    }
+
     #mid-main-menu-left {
         display: none;
     }
