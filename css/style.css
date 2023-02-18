@@ -593,4 +593,11 @@
     #player-right i {
         margin: 0 5px;
     }
+    #player-right i:first-child {
+        display: none;
+    }
+
+    .progress-outline {
+        display: none;
+    }
 }
