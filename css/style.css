@@ -569,13 +569,19 @@
         margin: 15px 25px;
     }
 
+    #player {
+        justify-content: center;
+    }
     #player-mid {
         transform: scale(0.8);
     }
 
+    #player-left, #player-right {
+        width: calc(100vw / 3);
+    }
+
     #player-left-icons {
         display: none;
-    }
     }
 
     #player-left-song {
@@ -584,10 +590,6 @@
 
     #player-cmd {
         min-width: none;
-    }
-
-    #player-right {
-        width: 130px;
     }
 
     #player-right i {
