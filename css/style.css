@@ -569,12 +569,13 @@
         margin: 15px 25px;
     }
 
-    #player-left {
-        width: 130px;
+    #player-mid {
+        transform: scale(0.8);
     }
 
-    #player-left img {
-        height: 5vw;
+    #player-left-icons {
+        display: none;
+    }
     }
 
     #player-left-song {
